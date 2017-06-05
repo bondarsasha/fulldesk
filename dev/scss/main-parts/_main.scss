@@ -1,0 +1,265 @@
+main{
+    background-color: #f6f6f6;
+    
+    position:relative;
+    
+}
+    
+    .DoubleBlock{
+        
+        margin-top: 4rem;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        margin: auto;
+        
+        h2{
+            
+            font:1.4rem/2.1rem OpenSans;
+            color: #565656;
+            text-transform: uppercase;
+            margin-top: 2rem;
+        }
+        .content{
+            display: flex;
+            flex-flow: column;
+            
+            
+            
+            
+               
+               
+                    
+                        .article h4{
+                             font:1.5rem/2.1rem OpenSans;
+                             color: #565656;
+                         }
+                         p{
+                             font:1.2rem/1.8rem OpenSans;
+                             color: #959595;
+                         }
+                          .post{
+                               position: relative;
+                               overflow: hidden;
+                              
+                               &:hover .href{
+                                    top:0;
+                              }
+                                &:hover .href::before{
+                                     transform: rotate(180deg);
+                                    
+                                   
+                             }
+                              img{
+                                  width: 100%;
+                                  max-width:100%
+                                    
+                              }
+                         .href{
+                              position: absolute;
+                              width: 100%;
+                              height: 100%;
+                              background:rgba(184,182,185,.5);
+                              transition:all 1s;
+                             top:0%;
+                           &::before{
+    
+                               content:url(../link.png);
+                               opacity: 0.5;
+                               position: relative;
+                               top: calc(50% - 18px);
+                               left: calc(50% - 18px);
+                                transition:all 1s;
+                               display: inline-block;
+                            }
+                              
+                             
+                      }
+              }   
+            }
+        
+
+}
+.img{
+    position: relative;
+    overflow: hidden;
+    
+                            
+    img{
+        width: 100%;
+        height: 100%;
+    }
+    .wall{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background:rgba(184,182,185,.5);
+        transition:top 1s;
+        top:0;
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-end;
+        text-decoration: none;
+        font:1.4rem/1.4rem OpenSans;
+        color: #565656;
+    }
+}
+
+
+ .img:hover .wall{
+         top:0; }  
+
+@media screen and (min-width:768px) {
+    .DoubleBlock .content{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        .article{
+            margin-right:4rem;
+                &:nth-of-type(3n){
+                    margin-right: 0;}
+        }
+    }
+    
+}
+@media screen and (min-width:1170px){
+    .DoubleBlock{
+         width: 1170px;
+         display: flex;
+         flex-flow: row;
+         justify-content: space-between;
+         margin: auto;
+         h2{
+             width: calc(25% - 20px);
+        margin-bottom: 25%;}
+        .content{
+            display: flex;
+            flex-flow: row wrap;
+            
+            width: calc(75% - 10px);
+    }
+    
+}
+   .DoubleBlock .content .post .href{
+        top:-100%;
+    }
+    .img .wall{
+        top: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+//.all .DoubleBlock{
+//    display: flex;
+//    justify-content: space-between;
+//}
+///*h1name______*/
+//.all .DoubleBlock .name{
+//    width: calc(25% - 30px);
+//    font:1.4rem/2.1rem OpenSans;
+//    color: #565656;
+//    text-transform: uppercase;
+//    padding-top: 2rem;
+//}
+///*content______________*/
+//.DoubleBlock .content{
+//     width: calc(75% - 10px);
+//   
+//}
+///*content blog*/
+//.DoubleBlock .blog{
+//     display: flex;
+//    flex-flow: wrap;
+//}
+//
+///*imageArticle__________*/
+//.DoubleBlock .content .post{
+//
+//    width:calc((100% - 80px) / 3);
+//    margin:0 40px 100px 0;
+//}
+//.DoubleBlock .content .post:nth-of-type(3n){
+//    margin-right: 0;
+//}
+///*photos_______*/
+//img{
+//    width: 100%;
+//    
+//}
+//
+///*h2PostName_____*/
+//.all .DoubleBlock .content .PostName{
+//    margin: 20px 0;
+//    font:1.4rem/2.1rem OpenSans;
+//    color: #565656;
+//}
+///*p________*/
+//.all .DoubleBlock .content .about{
+//    font:1.2rem/1.8rem OpenSans;
+//    color: #959595;
+//    margin-top: 20px;
+//}
+///*2part photos______________________________*/
+//.content {
+//    display: flex;
+//    flex-flow:wrap;
+//}
+///*article___*/
+//.content article{
+//    position: relative;
+//    overflow: hidden;
+//}
+///*hrefAnimation____________
+//____________________*/
+//.UpPost{
+//    position: relative;
+//    overflow: hidden;
+//}
+//.UpPost a{
+//    position: absolute;
+//    top:-100%;
+//    width: 100%;
+//    height: 100%;
+//    padding: 1rem;
+//    background:rgba(184,182,185,.5);
+//    transition:top 1s;
+//    display: flex;
+//    flex-flow: column;
+//    justify-content: flex-end;
+//    text-decoration: none;
+//    font:1.4rem/2.1rem OpenSans;
+//    color: #565656;
+//}
+//.UpPost:hover a {
+//    top:0;
+//}
+//article .wall{
+//    position: absolute;
+//    top:100%;
+//    width: 100%;
+//    height: 100%;
+//    padding: 1rem;
+//    background:rgba(184,182,185,.5);
+//    transition:top 1s;
+//    display: flex;
+//    flex-flow: column;
+//    justify-content: flex-end;
+//    text-decoration: none;
+//    font:1.4rem/2.1rem OpenSans;
+//    color: #565656;
+//   
+//}
+//article:hover .wall {
+//    top:0;
+//}

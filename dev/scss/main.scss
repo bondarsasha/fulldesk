@@ -1,0 +1,19 @@
+/*Global________________*/
+* {
+    box-sizing: border-box; 
+}
+html {
+    font-size:62.5%;
+}
+body{
+  margin: 0;
+    padding: 0;
+    
+}
+/*header________________*/
+@import 'main-parts/_header.scss';
+/*main________________*/
+@import 'main-parts/_main.scss';
+/*footer________________*/
+@import 'main-parts/_footer.scss';
+
