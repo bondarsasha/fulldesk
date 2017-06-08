@@ -5,10 +5,7 @@ header{
         margin: auto;
     }
     
-    .logo {
-        display: flex;
-        justify-content: center;
-    }
+    
     
     
    
@@ -48,8 +45,8 @@ header{
             
         }    
         p{
-            margin-top: 80px;
-            padding-bottom: 80px;
+            
+            padding: 80px 0;
             font: 3rem/3.6rem 'OpenSans';
             font-weight: 300;
             color:#565656;
@@ -63,14 +60,14 @@ header{
      margin-left: 0;
 }
 @media screen and (min-width:768px) {
-    .GridContainer{
+    header .GridContainer{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
     }
     .RightSide{
         display: flex;
         flex-flow: wrap;
-        justify-content: space-around;
+        justify-content: space-between;
      nav{
         display: flex;
     }}
@@ -83,7 +80,7 @@ header{
         .RightSide{
             width: calc(75% - 20px);
             nav a{
-              nav:first-child{
+             &:first-child{
                     margin-left: 0;}
             }
         }

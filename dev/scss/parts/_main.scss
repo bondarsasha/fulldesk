@@ -3,26 +3,24 @@ main{
     
     position:relative;
     
+    
 }
+@import 'main/_h2.scss';
     
     .DoubleBlock{
         
         margin-top: 4rem;
         display: flex;
         flex-flow: column;
-        align-items: center;
+        
         margin: auto;
         
-        h2{
-            
-            font:1.4rem/2.1rem OpenSans;
-            color: #565656;
-            text-transform: uppercase;
-            margin-top: 2rem;
+        .blog{
+             display: flex;
+            flex-flow: column;
         }
         .content{
-            display: flex;
-            flex-flow: column;
+           
             
             
             
@@ -31,12 +29,15 @@ main{
                
                     
                         .article h4{
-                             font:1.5rem/2.1rem OpenSans;
+                             font:1.5rem/2.1rem 'OpenSans';
                              color: #565656;
+                            text-align: center;
                          }
                          p{
                              font:1.2rem/1.8rem OpenSans;
                              color: #959595;
+                             text-align: center;
+                        
                          }
                           .post{
                                position: relative;
@@ -100,7 +101,7 @@ main{
         flex-flow: column;
         justify-content: flex-end;
         text-decoration: none;
-        font:1.4rem/1.4rem OpenSans;
+        font:1.4rem/1.4rem 'OpenSans';
         color: #565656;
     }
 }
@@ -114,6 +115,7 @@ main{
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
+        
         .article{
             margin-right:4rem;
                 &:nth-of-type(3n){
@@ -123,21 +125,32 @@ main{
     
 }
 @media screen and (min-width:1170px){
+    .GridContainer{
+        width: 1170px;
+        margin: auto;
+    }
     .DoubleBlock{
-         width: 1170px;
+        
          display: flex;
          flex-flow: row;
          justify-content: space-between;
-         margin: auto;
+         
          h2{
              width: calc(25% - 20px);
-        margin-bottom: 25%;}
+             text-align: left;
+        }
         .content{
-            display: flex;
-            flex-flow: row wrap;
+           
             
             width: calc(75% - 10px);
+            .article{
+                width: calc((100% - 80px) / 3);
+            }
     }
+        .blog{
+             display: flex;
+            flex-flow: row wrap;
+        }
     
 }
    .DoubleBlock .content .post .href{
@@ -159,107 +172,3 @@ main{
 
 
 
-
-//.all .DoubleBlock{
-//    display: flex;
-//    justify-content: space-between;
-//}
-///*h1name______*/
-//.all .DoubleBlock .name{
-//    width: calc(25% - 30px);
-//    font:1.4rem/2.1rem OpenSans;
-//    color: #565656;
-//    text-transform: uppercase;
-//    padding-top: 2rem;
-//}
-///*content______________*/
-//.DoubleBlock .content{
-//     width: calc(75% - 10px);
-//   
-//}
-///*content blog*/
-//.DoubleBlock .blog{
-//     display: flex;
-//    flex-flow: wrap;
-//}
-//
-///*imageArticle__________*/
-//.DoubleBlock .content .post{
-//
-//    width:calc((100% - 80px) / 3);
-//    margin:0 40px 100px 0;
-//}
-//.DoubleBlock .content .post:nth-of-type(3n){
-//    margin-right: 0;
-//}
-///*photos_______*/
-//img{
-//    width: 100%;
-//    
-//}
-//
-///*h2PostName_____*/
-//.all .DoubleBlock .content .PostName{
-//    margin: 20px 0;
-//    font:1.4rem/2.1rem OpenSans;
-//    color: #565656;
-//}
-///*p________*/
-//.all .DoubleBlock .content .about{
-//    font:1.2rem/1.8rem OpenSans;
-//    color: #959595;
-//    margin-top: 20px;
-//}
-///*2part photos______________________________*/
-//.content {
-//    display: flex;
-//    flex-flow:wrap;
-//}
-///*article___*/
-//.content article{
-//    position: relative;
-//    overflow: hidden;
-//}
-///*hrefAnimation____________
-//____________________*/
-//.UpPost{
-//    position: relative;
-//    overflow: hidden;
-//}
-//.UpPost a{
-//    position: absolute;
-//    top:-100%;
-//    width: 100%;
-//    height: 100%;
-//    padding: 1rem;
-//    background:rgba(184,182,185,.5);
-//    transition:top 1s;
-//    display: flex;
-//    flex-flow: column;
-//    justify-content: flex-end;
-//    text-decoration: none;
-//    font:1.4rem/2.1rem OpenSans;
-//    color: #565656;
-//}
-//.UpPost:hover a {
-//    top:0;
-//}
-//article .wall{
-//    position: absolute;
-//    top:100%;
-//    width: 100%;
-//    height: 100%;
-//    padding: 1rem;
-//    background:rgba(184,182,185,.5);
-//    transition:top 1s;
-//    display: flex;
-//    flex-flow: column;
-//    justify-content: flex-end;
-//    text-decoration: none;
-//    font:1.4rem/2.1rem OpenSans;
-//    color: #565656;
-//   
-//}
-//article:hover .wall {
-//    top:0;
-//}
