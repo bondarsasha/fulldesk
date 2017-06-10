@@ -1,22 +1,41 @@
 header{
     font-size: 100%;
-    .GridContainer{
-        padding: 0 5vw;
+    .gridContainer{
+        //padding: 0 5vw;
         margin: auto;
+        width: 1170px;
+        padding: 5rem 0 0 0;
+        
     }
     
-    
-    
+    .left{
+            width: calc(25% - 20px);
+            
+            
+    }
+
     
    
     }
-    .RightSide{
+    .right{
+        
+            width:75%;
+            display: flex;
+            flex-flow: wrap;
+            justify-content: space-between;
+        
+            nav a{
+             &:first-child{
+                    margin-left: 0;}
+            }
+        
          nav{
-    
-    
+            display:flex;
+        
        
     a{
-    font:1.5rem/3.6rem 'OpenSans';
+        
+    font:1.5rem/3.6rem Times New Roman;
     font-weight: 400;
     color:#959595;
     text-transform: uppercase;
@@ -31,7 +50,7 @@ header{
         
     
         input[type="text"] {
-            padding-left: 30px;
+            padding-left: 3rem;
             width: 200px;
             height: 30px;
             border: 0.1rem solid #dddddd;
@@ -44,52 +63,11 @@ header{
             color:rgba(179,179,179,.5);
             
         }    
-        p{
+        .bold{
             
             padding: 80px 0;
-            font: 3rem/3.6rem 'OpenSans';
-            font-weight: 300;
+            font: 3rem/3.6rem Times New Roman;
+            //font-weight: 300;
             color:#565656;
         }
     }
-    
-    
-        
-
-.nav a:first-child{
-     margin-left: 0;
-}
-@media screen and (min-width:768px) {
-    header .GridContainer{
-        display: flex;
-        justify-content: space-between;
-    }
-    .RightSide{
-        display: flex;
-        flex-flow: wrap;
-        justify-content: space-between;
-     nav{
-        display: flex;
-    }}
-}
-@media screen and (min-width:1170px) {
-   header .GridContainer{ 
-        width: 1170px;
-         margin:0 auto;
-        padding: 5rem 0 0 0 ;
-        .RightSide{
-            width: calc(75% - 20px);
-            nav a{
-             &:first-child{
-                    margin-left: 0;}
-            }
-        }
-        .logo{
-          width: calc(25% - 20px);
-            justify-content: flex-start;
-    }
-         
-    }
-   
-    
-}

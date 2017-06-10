@@ -1,66 +1,52 @@
-footer{
-    background-color: #171717;
+.gridContainer {
+    width:1140px;
+    margin:auto;
     
-    .container{
-        
-        margin: auto;
-    }
-   
+}
+footer {
+    background: #171717;
+    margin-top:100px;
+}
+.doubleCol {
+    display:flex;
+    justify-content: space-between;
     
-    .end{
-       
-        display: flex;
-        flex-flow: column;
+    .end {
         
-       
-        
-        justify-content: center;
-        
-        
+        width:calc(25% - 20px);
     }
-    .foot{
-        width: 100%;
-       
-        }
-        h6{
-            font:1.4rem/2.1rem 'OpenSans';
-            color: #919191;
-            text-transform: uppercase;
-            text-align: center;
+
+.foot {
+        display:flex;
+        width:calc(75% - 20px);
+
+        article {
+            width:calc((100% - 80px) / 3);
+            margin: 0 40px 40px 0;
+            overflow: hidden;
+            position:relative;
             
         }
-        p{
-            font:1.2rem/1.8rem 'OpenSans';
-            color: #474747;
-             text-align: center;
-        }
-        .DayAgo{
-            font:1.1rem/1.8rem 'MyridPro';
-            color: #3b3b3b;
-            font-style: oblique;
-
-        }
-    .facebook a img{
-        margin-left:  calc(50% - 83.5px);
-    }
-        
-    }
-
-@media screen and (min-width:768px){
-    .GridContainer .end{
-        flex-flow: row;
-    }
-}
-@media screen and (min-width:1170px){
-    footer .GridContainer{
-        width: 1170px;
-        
-        .end{
-            justify-content: flex-end;
-        }    
-        .foot{
-            width:  calc(75% / 3);
-        }
-    }
     
+        article:nth-of-type(3n) {
+        margin:0 0 40px;
+        }
+    
+        h2 {
+        font:1.4rem/2.1rem Times New Roman;
+        color: #858585;
+        border-top: .1rem solid #858585;
+            margin-top:50px;
+        }
+    
+        p {
+        font:1.2rem/1.8rem Times New Roman;
+        color: #858585;
+        }
+}
+
+    
+}
+.facebook {
+    margin-top:20px;
 }
